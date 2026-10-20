@@ -79,7 +79,7 @@ pio run -e waveshare_s3_matrix -t upload -t monitor
 
 | Zweck            | Einstellung                                                                      |
 |------------------|----------------------------------------------------------------------------------|
-| Projekte         | `[env:waveshare_s3_matrix]` mit `extends = waveshare_s3_matrix_base`             |
+| Projekte         | `[env:waveshare_s3_matrix]` mit `extends = waveshare_s3_matrix_base` – in [`matrix-demo`](../../projects/matrix-demo) und [`wlan-matrix`](../../projects/wlan-matrix) (WLAN-Ausleuchtung) |
 | Defines          | `MATRIX_PIN=14`, `MATRIX_WIDTH=8`, `MATRIX_HEIGHT=8`, `IMU_SDA_PIN=11`, `IMU_SCL_PIN=12`, `MATRIX_COLOR_ORDER` |
 | Flash-Modus      | `dio` (wie in der ESPHome-Gerätedatenbank)                                        |
 | Partitionen      | `default.csv` (2× 1,25 MB App für OTA)                                           |
