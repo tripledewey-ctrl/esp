@@ -1,0 +1,18 @@
+{
+  "title": "Waveshare ESP32-S3-Matrix",
+  "subtitle": "Waveshare · Chip ESP32-S3FH4R2 (4 MB Flash, 2 MB PSRAM) · 8×8 RGB-LED-Matrix · QMI8658 IMU",
+  "module": "ESP32-S3FH4R2 + QMI8658",
+  "matrix": 8,
+  "top": "Keramik-/PCB-Antenne",
+  "bottom": "USB-C (nativ, USB-Serial/JTAG) · Stiftleisten an den Längsseiten (Belegung lt. Aufdruck)",
+  "buttons": ["BOOT", "RST"],
+  "internal": [
+    ["GPIO14", "Datenleitung der 64 WS2812-LEDs (8×8)"],
+    ["GPIO11", "I2C SDA → QMI8658 (Adresse 0x6B)"],
+    ["GPIO12", "I2C SCL → QMI8658"],
+    ["GPIO10", "QMI8658 INT1"],
+    ["GPIO13", "QMI8658 INT2"],
+    ["GPIO19/20", "USB D-/D+"],
+    ["GPIO0", "BOOT-Taste"]
+  ]
+}

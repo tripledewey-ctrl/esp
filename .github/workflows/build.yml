@@ -6,13 +6,23 @@ on:
   workflow_dispatch:
 
 jobs:
+  docs:
+    name: Doku-Prüfung
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/check-docs.py
+
   projects:
     name: Projekt ${{ matrix.project }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        project: [blink, webserver-ota, sensor-mqtt, _template]
+        project: [blink, webserver-ota, sensor-mqtt, matrix-demo, _template]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,7 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        env: [wled_esp32, wled_nodemcuv2, wled_d1mini]
+        env: [wled_esp32, wled_nodemcuv2, wled_d1mini, wled_s3_matrix]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

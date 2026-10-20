@@ -1,5 +1,8 @@
 # 2 – Boards
 
+> Ausführliche Seiten pro Board (Bezeichnung von Familie bis Board, Abbildung,
+> Pinbelegung): **[docs/boards/](boards/README.md)**
+
 Alle Board-Einstellungen stehen zentral in [`boards/boards.ini`](../boards/boards.ini).
 Jedes Projekt bindet die Datei ein und erbt mit `extends` von einer Basis:
 

@@ -34,6 +34,7 @@ Releases: <https://github.com/wled/WLED/releases>
 | ESP32 (DevKit, WROOM)  | `WLED_0.15.x_ESP32.bin`           |
 | ESP32-C3               | `WLED_0.15.x_ESP32-C3.bin`        |
 | ESP32-S3 (8 MB, PSRAM) | `WLED_0.15.x_ESP32-S3_8MB_opi.bin`|
+| Waveshare ESP32-S3-Matrix (4 MB) | `WLED_0.15.x_ESP32-S3_4M_qspi.bin` |
 | ESP8266 (4 MB)         | `WLED_0.15.x_ESP8266.bin`         |
 | ESP-01 (1 MB)          | `WLED_0.15.x_ESP01.bin`           |
 
@@ -121,6 +122,7 @@ Weitere Optionen (Usermods, Audioreactive, Ethernet, IR …) sind in
 | ESP32            | GPIO16                 | fast alle Ausgänge möglich, nicht 6–11    |
 | ESP32-C3         | GPIO10                 | nicht GPIO 11–17 (Flash)                  |
 | ESP8266 / D1 mini| GPIO2 (D4) oder GPIO3 (RX, DMA) | GPIO3 ist am stabilsten         |
+| Waveshare ESP32-S3-Matrix | GPIO14 (fest verdrahtet) | 64 LEDs, Stromlimit ≤ 500 mA – siehe [Board-Seite](../docs/boards/waveshare-esp32-s3-matrix.md) |
 
 ## Presets & Sicherung
 
