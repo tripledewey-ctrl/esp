@@ -55,10 +55,15 @@ Alle Anpassungen stehen in [`platformio_override.ini`](platformio_override.ini):
 [wled_custom]
 build_flags =
     -D SERVERNAME='"WLED-Custom"'
-    -D DATA_PINS=16                 ; GPIO für die LED-Datenleitung
     -D PIXEL_COUNTS=60              ; Anzahl LEDs
     -D ABL_MILLIAMPS_DEFAULT=2000   ; Strombegrenzung in mA
     ...
+
+[env:wled_esp32]
+extends     = env:esp32dev
+build_flags = ...
+    -D DATA_PINS=16                 ; GPIO für die LED-Datenleitung
+    ${wled_custom.build_flags}
 ```
 
 Bauen (benötigt PlatformIO, Git und Node.js ≥ 20):
