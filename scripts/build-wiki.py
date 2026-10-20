@@ -116,6 +116,8 @@ def main(argv):
     images = {}
     for _, rel, name, _ in pages:
         text = (ROOT / rel).read_text(encoding="utf-8")
+        # Hinweis "Doku gibt es auch als Wiki" ist im Wiki selbst überflüssig
+        text = re.sub(r"^> 📖.*\n(?:>.*\n)*\n?", "", text, flags=re.M)
         text = rewrite(text, rel, names, images)
         text += (f"\n\n---\n<sub>Automatisch erzeugt aus [`{rel}`]({REPO_URL}/blob/{BRANCH}/{rel}). "
                  f"Änderungen bitte im Repo vornehmen.</sub>\n")
