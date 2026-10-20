@@ -21,3 +21,6 @@ wled/config/backup/
 
 # Python
 __pycache__/
+
+# Lokal erzeugtes Wiki (scripts/build-wiki.py)
+wiki-build/

@@ -22,6 +22,7 @@ Dieses Repo ist die Wissensbasis für ESP-Boards, PlatformIO und WLED. Antworten
 | Projekte                       | `projects/<name>/` (Vorlage `_template`), Doku in `docs/04-eigene-projekte.md` |
 | CI                             | `.github/workflows/build.yml`                                        |
 | Konsistenzprüfung              | `scripts/check-docs.py`                                              |
+| GitHub-Wiki                    | wird aus den Dateien oben erzeugt: `scripts/build-wiki.py`, veröffentlicht von `.github/workflows/wiki.yml` |
 
 ## 1. Fragen beantworten
 
@@ -78,6 +79,7 @@ Versionsangaben repo-weit finden: `grep -rn "v0\.1[0-9]\.\|espressif32@\|espress
 
 ```bash
 python3 scripts/check-docs.py          # Links, Board-Übersicht, Bilder aktuell, Basen, CI-Liste
+python3 scripts/build-wiki.py /tmp/wiki # Wiki-Erzeugung läuft durch?
 ./scripts/build-all.sh <projekt>       # wenn PlatformIO und Internet verfügbar
 pio project config -d projects/<projekt>   # offline: Konfiguration auflösbar?
 ```
@@ -85,6 +87,18 @@ pio project config -d projects/<projekt>   # offline: Konfiguration auflösbar?
 Ist die PlatformIO-Registry nicht erreichbar (z. B. in gesperrten Umgebungen), mindestens
 `pio project config` ausführen und das Bauen der GitHub Action überlassen. Im Bericht
 dann klar sagen, was wirklich kompiliert wurde und was nicht.
+
+## Wiki
+
+Das Wiki ist **generiert**. Inhalte nie im Wiki selbst ändern, sondern im Repo.
+Welche Dateien zu Wiki-Seiten werden, steht in `SOURCES` in `scripts/build-wiki.py`:
+Root-README, `docs/0*.md`, `docs/boards/*.md`, `wled/**/README.md` und `projects/*/README.md`.
+Neue Board-Seiten und Projekte erscheinen automatisch. Für eine neue Doku-Kategorie
+`SOURCES` ergänzen und die Workflow-`paths` prüfen.
+
+Lokale Vorschau: `python3 scripts/build-wiki.py /tmp/wiki`. Die Ausgabe listet alle
+Seiten mit ihrer Quelle. Links zwischen Doku-Dateien werden zu Wiki-Links, Bilder
+landen in `images/`. Links auf Code zeigen auf GitHub (`blob/main`).
 
 ## Regeln
 

@@ -1,5 +1,8 @@
 # ESP – Anleitungen & Konfigurationen
 
+> 📖 Die Doku gibt es auch als **[Wiki](https://github.com/tripledewey-ctrl/esp/wiki)**.
+> Es wird automatisch aus diesem Repo erzeugt.
+
 Sammlung von Anleitungen, **PlatformIO**-Konfigurationen und Projekten für
 **ESP32** und **ESP8266** – von der LED-Steuerung mit **WLED** bis zu eigenen
 Sensoren. Auschecken, Board anschließen, loslegen.
@@ -74,8 +77,21 @@ Ausführliche Board-Seiten mit Abbildung: [docs/boards/](docs/boards/README.md).
 | `scripts/flash.sh <datei.bin> [port]`    | Fertige Firmware per USB (esptool) flashen                 |
 | `scripts/board-image.py <spec.json>`     | Board-Abbildung (SVG) aus Pinbelegung erzeugen             |
 | `scripts/check-docs.py`                  | Doku prüfen: Links, Board-Übersicht, Bilder, CI-Liste      |
+| `scripts/build-wiki.py [ordner]`         | Wiki-Seiten aus der Doku erzeugen (lokale Vorschau)        |
 
 Unter Windows die Skripte in **Git Bash** oder **WSL** ausführen.
+
+## Wiki
+
+Das [GitHub-Wiki](https://github.com/tripledewey-ctrl/esp/wiki) wird aus `README.md`,
+`docs/`, `wled/` und den Projekt-READMEs erzeugt (`scripts/build-wiki.py`). Die Action
+`.github/workflows/wiki.yml` veröffentlicht es bei jedem Push auf `main`.
+**Änderungen immer im Repo machen.** Direkte Änderungen im Wiki werden beim
+nächsten Lauf überschrieben.
+
+Einmalige Einrichtung: **Settings → General → Features → Wikis** aktivieren, dann im
+Reiter **Wiki** auf „Create the first page“ klicken und speichern. Danach unter
+**Actions → Wiki → Run workflow** einmal starten.
 
 ## Claude-Skill „esp-doku“
 
