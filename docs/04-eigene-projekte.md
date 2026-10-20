@@ -30,6 +30,7 @@ pio run -e esp32dev -t upload -t monitor
 | [`webserver-ota`](../projects/webserver-ota)         | WLAN, Weboberfläche, JSON-API, mDNS, OTA-Update |
 | [`sensor-mqtt`](../projects/sensor-mqtt)             | BME280 → MQTT, Home-Assistant-Discovery         |
 | [`matrix-demo`](../projects/matrix-demo)             | Waveshare ESP32-S3-Matrix: Pixel-/Farbtest, Effekte |
+| [`wlan-matrix`](../projects/wlan-matrix)             | WLAN-Ausleuchtung/Mesh-Knoten auf LED-Matrix + Weboberfläche, WiFiManager-Portal |
 
 Ein Projekt kopieren statt der Vorlage: `cp -r projects/webserver-ota projects/neu`.
 

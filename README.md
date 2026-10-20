@@ -28,7 +28,8 @@ esp/
 │   ├── blink/                Board-Test
 │   ├── webserver-ota/        WLAN + Weboberfläche + OTA-Updates
 │   ├── sensor-mqtt/          BME280 → MQTT / Home Assistant
-│   └── matrix-demo/          Waveshare ESP32-S3-Matrix (8×8 LEDs)
+│   ├── matrix-demo/          Waveshare ESP32-S3-Matrix (8×8 LEDs)
+│   └── wlan-matrix/          WLAN-Signalstärke + Mesh-Knoten auf LED-Matrix, Webserver
 ├── wled/
 │   ├── README.md             WLED installieren, verdrahten, sichern
 │   ├── platformio_override.ini  Eigene WLED-Builds (Pins, LED-Anzahl …)
@@ -62,7 +63,8 @@ Die allgemeinen Projekte bringen diese Umgebungen (`-e …`) mit:
 | `d1mini`    | Wemos/LOLIN D1 mini                    |
 
 Spezialboard: **Waveshare ESP32-S3-Matrix** → Env `waveshare_s3_matrix` in
-[`projects/matrix-demo`](projects/matrix-demo) und `wled_s3_matrix` für WLED.
+[`projects/matrix-demo`](projects/matrix-demo) und [`projects/wlan-matrix`](projects/wlan-matrix),
+`wled_s3_matrix` für WLED.
 
 Ausführliche Board-Seiten mit Abbildung: [docs/boards/](docs/boards/README.md).
 

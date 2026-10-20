@@ -23,7 +23,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        project: [blink, webserver-ota, sensor-mqtt, matrix-demo, _template]
+        project: [blink, webserver-ota, sensor-mqtt, matrix-demo, wlan-matrix, _template]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
