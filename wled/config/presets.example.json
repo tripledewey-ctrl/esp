@@ -1,0 +1,27 @@
+{
+  "0": {},
+  "1": {
+    "n": "Warmweiß",
+    "on": true, "bri": 160, "transition": 7,
+    "seg": [{ "id": 0, "fx": 0, "col": [[255, 160, 60], [0, 0, 0], [0, 0, 0]] }]
+  },
+  "2": {
+    "n": "Regenbogen",
+    "on": true, "bri": 128,
+    "seg": [{ "id": 0, "fx": 9, "sx": 128, "ix": 128, "pal": 0 }]
+  },
+  "3": {
+    "n": "Kaminfeuer",
+    "on": true, "bri": 140,
+    "seg": [{ "id": 0, "fx": 66, "sx": 64, "ix": 160, "pal": 35 }]
+  },
+  "4": {
+    "n": "Nachtlicht",
+    "on": true, "bri": 10,
+    "seg": [{ "id": 0, "fx": 0, "col": [[255, 80, 10], [0, 0, 0], [0, 0, 0]] }]
+  },
+  "5": {
+    "n": "Aus",
+    "on": false
+  }
+}
