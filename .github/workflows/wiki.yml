@@ -1,0 +1,53 @@
+name: Wiki
+
+# Veröffentlicht die Doku aus dem Repo als GitHub-Wiki (scripts/build-wiki.py).
+# Einmalig nötig: Settings -> Features -> Wikis aktivieren und im Wiki-Tab
+# eine erste Seite speichern (legt das Wiki-Repository an).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "docs/**"
+      - "wled/**/*.md"
+      - "projects/**/README.md"
+      - "scripts/build-wiki.py"
+      - ".github/workflows/wiki.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Wiki-Repository auschecken
+        run: |
+          if ! git clone "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git" wiki; then
+            echo "::error::Wiki-Repository nicht gefunden. Settings -> Features -> Wikis aktivieren und im Wiki-Tab einmal eine erste Seite speichern."
+            exit 1
+          fi
+
+      - name: Seiten erzeugen
+        run: python3 scripts/build-wiki.py wiki
+
+      - name: Veröffentlichen
+        working-directory: wiki
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Wiki ist aktuell."
+            exit 0
+          fi
+          git commit -m "Wiki aus ${GITHUB_SHA::7} erzeugt"
+          git push

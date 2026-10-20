@@ -1,0 +1,106 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='810' height='706' viewBox='0 0 810 706'>
+<rect width='100%' height='100%' fill='#ffffff'/>
+<text x='405.0' y='34' text-anchor='middle' font-size='20' font-weight='bold' fill='#111' font-family='DejaVu Sans, Arial, sans-serif'>Waveshare ESP32-S3-Matrix</text>
+<text x='405.0' y='56' text-anchor='middle' font-size='13' fill='#555' font-family='DejaVu Sans, Arial, sans-serif'>Waveshare · Chip ESP32-S3FH4R2 (4 MB Flash, 2 MB PSRAM) · 8×8 RGB-LED-Matrix · QMI8658 IMU</text>
+<rect x='290' y='80' width='230' height='360' rx='10' fill='#1f3d2b' stroke='#0d1f15' stroke-width='2'/>
+<text x='405.0' y='72' text-anchor='middle' font-size='11' fill='#555' font-family='DejaVu Sans, Arial, sans-serif'>Keramik-/PCB-Antenne</text>
+<rect x='324.0' y='114' width='162.0' height='162.0' fill='#111' rx='4'/>
+<circle cx='339.375' cy='129.375' r='6.0' fill='hsl(0,85%,60%)'/>
+<circle cx='358.125' cy='129.375' r='6.0' fill='hsl(6,85%,60%)'/>
+<circle cx='376.875' cy='129.375' r='6.0' fill='hsl(11,85%,60%)'/>
+<circle cx='395.625' cy='129.375' r='6.0' fill='hsl(17,85%,60%)'/>
+<circle cx='414.375' cy='129.375' r='6.0' fill='hsl(22,85%,60%)'/>
+<circle cx='433.125' cy='129.375' r='6.0' fill='hsl(28,85%,60%)'/>
+<circle cx='451.875' cy='129.375' r='6.0' fill='hsl(34,85%,60%)'/>
+<circle cx='470.625' cy='129.375' r='6.0' fill='hsl(39,85%,60%)'/>
+<circle cx='339.375' cy='148.125' r='6.0' fill='hsl(45,85%,60%)'/>
+<circle cx='358.125' cy='148.125' r='6.0' fill='hsl(51,85%,60%)'/>
+<circle cx='376.875' cy='148.125' r='6.0' fill='hsl(56,85%,60%)'/>
+<circle cx='395.625' cy='148.125' r='6.0' fill='hsl(62,85%,60%)'/>
+<circle cx='414.375' cy='148.125' r='6.0' fill='hsl(68,85%,60%)'/>
+<circle cx='433.125' cy='148.125' r='6.0' fill='hsl(73,85%,60%)'/>
+<circle cx='451.875' cy='148.125' r='6.0' fill='hsl(79,85%,60%)'/>
+<circle cx='470.625' cy='148.125' r='6.0' fill='hsl(84,85%,60%)'/>
+<circle cx='339.375' cy='166.875' r='6.0' fill='hsl(90,85%,60%)'/>
+<circle cx='358.125' cy='166.875' r='6.0' fill='hsl(96,85%,60%)'/>
+<circle cx='376.875' cy='166.875' r='6.0' fill='hsl(101,85%,60%)'/>
+<circle cx='395.625' cy='166.875' r='6.0' fill='hsl(107,85%,60%)'/>
+<circle cx='414.375' cy='166.875' r='6.0' fill='hsl(112,85%,60%)'/>
+<circle cx='433.125' cy='166.875' r='6.0' fill='hsl(118,85%,60%)'/>
+<circle cx='451.875' cy='166.875' r='6.0' fill='hsl(124,85%,60%)'/>
+<circle cx='470.625' cy='166.875' r='6.0' fill='hsl(129,85%,60%)'/>
+<circle cx='339.375' cy='185.625' r='6.0' fill='hsl(135,85%,60%)'/>
+<circle cx='358.125' cy='185.625' r='6.0' fill='hsl(141,85%,60%)'/>
+<circle cx='376.875' cy='185.625' r='6.0' fill='hsl(146,85%,60%)'/>
+<circle cx='395.625' cy='185.625' r='6.0' fill='hsl(152,85%,60%)'/>
+<circle cx='414.375' cy='185.625' r='6.0' fill='hsl(158,85%,60%)'/>
+<circle cx='433.125' cy='185.625' r='6.0' fill='hsl(163,85%,60%)'/>
+<circle cx='451.875' cy='185.625' r='6.0' fill='hsl(169,85%,60%)'/>
+<circle cx='470.625' cy='185.625' r='6.0' fill='hsl(174,85%,60%)'/>
+<circle cx='339.375' cy='204.375' r='6.0' fill='hsl(180,85%,60%)'/>
+<circle cx='358.125' cy='204.375' r='6.0' fill='hsl(186,85%,60%)'/>
+<circle cx='376.875' cy='204.375' r='6.0' fill='hsl(191,85%,60%)'/>
+<circle cx='395.625' cy='204.375' r='6.0' fill='hsl(197,85%,60%)'/>
+<circle cx='414.375' cy='204.375' r='6.0' fill='hsl(202,85%,60%)'/>
+<circle cx='433.125' cy='204.375' r='6.0' fill='hsl(208,85%,60%)'/>
+<circle cx='451.875' cy='204.375' r='6.0' fill='hsl(214,85%,60%)'/>
+<circle cx='470.625' cy='204.375' r='6.0' fill='hsl(219,85%,60%)'/>
+<circle cx='339.375' cy='223.125' r='6.0' fill='hsl(225,85%,60%)'/>
+<circle cx='358.125' cy='223.125' r='6.0' fill='hsl(231,85%,60%)'/>
+<circle cx='376.875' cy='223.125' r='6.0' fill='hsl(236,85%,60%)'/>
+<circle cx='395.625' cy='223.125' r='6.0' fill='hsl(242,85%,60%)'/>
+<circle cx='414.375' cy='223.125' r='6.0' fill='hsl(248,85%,60%)'/>
+<circle cx='433.125' cy='223.125' r='6.0' fill='hsl(253,85%,60%)'/>
+<circle cx='451.875' cy='223.125' r='6.0' fill='hsl(259,85%,60%)'/>
+<circle cx='470.625' cy='223.125' r='6.0' fill='hsl(264,85%,60%)'/>
+<circle cx='339.375' cy='241.875' r='6.0' fill='hsl(270,85%,60%)'/>
+<circle cx='358.125' cy='241.875' r='6.0' fill='hsl(276,85%,60%)'/>
+<circle cx='376.875' cy='241.875' r='6.0' fill='hsl(281,85%,60%)'/>
+<circle cx='395.625' cy='241.875' r='6.0' fill='hsl(287,85%,60%)'/>
+<circle cx='414.375' cy='241.875' r='6.0' fill='hsl(292,85%,60%)'/>
+<circle cx='433.125' cy='241.875' r='6.0' fill='hsl(298,85%,60%)'/>
+<circle cx='451.875' cy='241.875' r='6.0' fill='hsl(304,85%,60%)'/>
+<circle cx='470.625' cy='241.875' r='6.0' fill='hsl(309,85%,60%)'/>
+<circle cx='339.375' cy='260.625' r='6.0' fill='hsl(315,85%,60%)'/>
+<circle cx='358.125' cy='260.625' r='6.0' fill='hsl(321,85%,60%)'/>
+<circle cx='376.875' cy='260.625' r='6.0' fill='hsl(326,85%,60%)'/>
+<circle cx='395.625' cy='260.625' r='6.0' fill='hsl(332,85%,60%)'/>
+<circle cx='414.375' cy='260.625' r='6.0' fill='hsl(338,85%,60%)'/>
+<circle cx='433.125' cy='260.625' r='6.0' fill='hsl(343,85%,60%)'/>
+<circle cx='451.875' cy='260.625' r='6.0' fill='hsl(349,85%,60%)'/>
+<circle cx='470.625' cy='260.625' r='6.0' fill='hsl(354,85%,60%)'/>
+<text x='405.0' y='108' text-anchor='middle' font-size='10' fill='#e5e7eb' font-family='DejaVu Sans, Arial, sans-serif'>8×8 RGB-LEDs</text>
+<rect x='335.0' y='300.0' width='140' height='34' rx='4' fill='#2b2b2b' stroke='#888'/>
+<text x='405.0' y='321.0' text-anchor='middle' font-size='11' fill='#eee' font-family='DejaVu Sans, Arial, sans-serif'>ESP32-S3FH4R2 + QMI8658</text>
+<rect x='330' y='370' width='36' height='24' rx='3' fill='#ddd' stroke='#555'/>
+<circle cx='348' cy='382' r='7' fill='#333'/>
+<text x='348' y='362' text-anchor='middle' font-size='10' fill='#fff' font-family='DejaVu Sans, Arial, sans-serif'>BOOT</text>
+<rect x='444' y='370' width='36' height='24' rx='3' fill='#ddd' stroke='#555'/>
+<circle cx='462' cy='382' r='7' fill='#333'/>
+<text x='462' y='362' text-anchor='middle' font-size='10' fill='#fff' font-family='DejaVu Sans, Arial, sans-serif'>RST</text>
+<rect x='375.0' y='418' width='60' height='30' rx='4' fill='#b8bec4' stroke='#555'/>
+<text x='405.0' y='466' text-anchor='middle' font-size='11' fill='#555' font-family='DejaVu Sans, Arial, sans-serif'>USB-C (nativ, USB-Serial/JTAG) · Stiftleisten an den Längsseiten (Belegung lt. Aufdruck)</text>
+<text x='230' y='496' font-size='13' font-weight='bold' fill='#111' font-family='DejaVu Sans, Arial, sans-serif'>Intern belegt</text>
+<rect x='230' y='505' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='518' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO14</text>
+<text x='318' y='518' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>Datenleitung der 64 WS2812-LEDs (8×8)</text>
+<rect x='230' y='525' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='538' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO11</text>
+<text x='318' y='538' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>I2C SDA → QMI8658 (Adresse 0x6B)</text>
+<rect x='230' y='545' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='558' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO12</text>
+<text x='318' y='558' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>I2C SCL → QMI8658</text>
+<rect x='230' y='565' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='578' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO10</text>
+<text x='318' y='578' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>QMI8658 INT1</text>
+<rect x='230' y='585' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='598' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO13</text>
+<text x='318' y='598' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>QMI8658 INT2</text>
+<rect x='230' y='605' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='618' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO19/20</text>
+<text x='318' y='618' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>USB D-/D+</text>
+<rect x='230' y='625' width='80' height='17' rx='3' fill='#7b2cbf'/>
+<text x='270' y='638' text-anchor='middle' font-size='11' fill='#fff' font-weight='bold' font-family='DejaVu Sans, Arial, sans-serif'>GPIO0</text>
+<text x='318' y='638' font-size='11' fill='#222' font-family='DejaVu Sans, Arial, sans-serif'>BOOT-Taste</text>
+<text x='800' y='698' text-anchor='end' font-size='9' fill='#999' font-family='DejaVu Sans, Arial, sans-serif'>Schematisch, nicht maßstabsgetreu – erzeugt mit scripts/board-image.py</text>
+</svg>

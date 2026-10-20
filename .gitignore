@@ -18,3 +18,9 @@ wled/config/backup/
 # Sonstiges
 .DS_Store
 *.bak
+
+# Python
+__pycache__/
+
+# Lokal erzeugtes Wiki (scripts/build-wiki.py)
+wiki-build/
