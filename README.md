@@ -29,7 +29,10 @@ esp/
 │   ├── webserver-ota/        WLAN + Weboberfläche + OTA-Updates
 │   ├── sensor-mqtt/          BME280 → MQTT / Home Assistant
 │   ├── matrix-demo/          Waveshare ESP32-S3-Matrix (8×8 LEDs)
-│   └── wlan-matrix/          WLAN-Signalstärke + Mesh-Knoten auf LED-Matrix, Webserver
+│   ├── wlan-matrix/          WLAN-Signalstärke + Mesh-Knoten auf LED-Matrix, Webserver
+│   └── wlan-sonde/           WLAN-Analyse: Sonde / Begehung / Zentrale mit Gebäude-Übersicht
+├── tools/
+│   └── wlan-analyse/         PC-Auswertung: FRITZ!-Mesh + Messungen -> Bericht mit Lageplan
 ├── wled/
 │   ├── README.md             WLED installieren, verdrahten, sichern
 │   ├── platformio_override.ini  Eigene WLED-Builds (Pins, LED-Anzahl …)
@@ -49,6 +52,7 @@ esp/
 | 3   | [WLED](wled/README.md)                                 | Web-Installer, Release flashen, eigener Build   |
 | 4   | [Eigene Projekte](docs/04-eigene-projekte.md)          | Struktur, neues Projekt, `platformio.ini`       |
 | 5   | [Fehlerbehebung](docs/05-fehlerbehebung.md)            | Typische Fehler und Lösungen                    |
+| 6   | [WLAN-Analyse](docs/06-wlan-analyse.md)                | FRITZ!-Mesh über mehrere Gebäude messen und auswerten |
 
 ## Unterstützte Boards
 
@@ -67,6 +71,18 @@ Spezialboard: **Waveshare ESP32-S3-Matrix** → Env `waveshare_s3_matrix` in
 `wled_s3_matrix` für WLED.
 
 Ausführliche Board-Seiten mit Abbildung: [docs/boards/](docs/boards/README.md).
+
+## WLAN-Analyse-Modul
+
+Misst die WLAN-Abdeckung eines FRITZ!-Mesh-Netzes über mehrere Gebäude, zugeschnitten auf
+**Gebäude A – Halle – Gebäude B**. Fest montierte ESP32-Sonden, eine Begehung mit Messpunkten
+und eine Zentrale mit LED-Matrix-Übersicht (Waveshare ESP32-S3-Matrix) liefern die Daten.
+`tools/wlan-analyse` liest dazu die Mesh-Topologie der FRITZ!Box und erstellt einen Bericht
+mit Lageplan, Heatmap und konkreten Maßnahmen. Anleitung: [docs/06-wlan-analyse.md](docs/06-wlan-analyse.md).
+
+```bash
+cd tools/wlan-analyse && python3 -m wlan_analyse demo --oeffnen    # Beispielbericht
+```
 
 ## Skripte
 

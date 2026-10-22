@@ -12,6 +12,7 @@ on:
       - "docs/**"
       - "wled/**/*.md"
       - "projects/**/README.md"
+      - "tools/**/README.md"
       - "scripts/build-wiki.py"
       - ".github/workflows/wiki.yml"
   workflow_dispatch:

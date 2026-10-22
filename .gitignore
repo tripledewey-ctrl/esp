@@ -24,3 +24,7 @@ __pycache__/
 
 # Lokal erzeugtes Wiki (scripts/build-wiki.py)
 wiki-build/
+
+# Eigene Messdaten der WLAN-Analyse (MAC-Adressen, Gerätenamen)
+tools/wlan-analyse/daten/
+tools/wlan-analyse/*.html

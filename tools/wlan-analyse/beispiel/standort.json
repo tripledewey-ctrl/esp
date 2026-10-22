@@ -1,0 +1,230 @@
+{
+ "name": "Musterbetrieb – Gebäude A, Halle, Gebäude B",
+ "ssid": "FRITZ!Box 7590 Musterbetrieb",
+ "hinweis": "Koordinaten in Metern, x nach rechts, y nach unten (wie im Lageplan).",
+ "bereiche": [
+  {
+   "id": "A",
+   "name": "Gebäude A",
+   "x": 0,
+   "y": 0,
+   "breite": 20,
+   "hoehe": 16,
+   "art": "gebaeude"
+  },
+  {
+   "id": "halle",
+   "name": "Halle",
+   "x": 24,
+   "y": -4,
+   "breite": 40,
+   "hoehe": 24,
+   "art": "halle"
+  },
+  {
+   "id": "B",
+   "name": "Gebäude B",
+   "x": 68,
+   "y": 0,
+   "breite": 20,
+   "hoehe": 16,
+   "art": "gebaeude"
+  }
+ ],
+ "geraete": [
+  {
+   "name": "FRITZ!Box 7590",
+   "bereich": "A",
+   "x": 6,
+   "y": 7
+  },
+  {
+   "name": "Repeater Halle",
+   "bereich": "halle",
+   "x": 26,
+   "y": 6
+  },
+  {
+   "name": "Repeater B",
+   "bereich": "B",
+   "x": 70,
+   "y": 8
+  }
+ ],
+ "sonden": [
+  {
+   "name": "wlan-zentrale",
+   "bereich": "A",
+   "x": 12,
+   "y": 9.5,
+   "ort": "Büro EG, Regal (Waveshare-Matrix)"
+  },
+  {
+   "name": "sonde-halle-mitte",
+   "bereich": "halle",
+   "x": 44,
+   "y": 14,
+   "ort": "Halle Mitte, Säule 4, 3 m"
+  },
+  {
+   "name": "sonde-halle-tor",
+   "bereich": "halle",
+   "x": 56,
+   "y": 18,
+   "ort": "Halle, Rolltor Süd"
+  },
+  {
+   "name": "sonde-b-eg",
+   "bereich": "B",
+   "x": 79,
+   "y": 8,
+   "ort": "Gebäude B, Werkstatt"
+  }
+ ],
+ "punkte": [
+  {
+   "id": "A-1",
+   "bereich": "A",
+   "x": 4,
+   "y": 3
+  },
+  {
+   "id": "A-2",
+   "bereich": "A",
+   "x": 10,
+   "y": 3
+  },
+  {
+   "id": "A-3",
+   "bereich": "A",
+   "x": 16,
+   "y": 3
+  },
+  {
+   "id": "A-4",
+   "bereich": "A",
+   "x": 4,
+   "y": 13
+  },
+  {
+   "id": "A-5",
+   "bereich": "A",
+   "x": 10,
+   "y": 13
+  },
+  {
+   "id": "A-6",
+   "bereich": "A",
+   "x": 16,
+   "y": 13
+  },
+  {
+   "id": "H-1",
+   "bereich": "halle",
+   "x": 30,
+   "y": 0
+  },
+  {
+   "id": "H-2",
+   "bereich": "halle",
+   "x": 30,
+   "y": 16
+  },
+  {
+   "id": "H-3",
+   "bereich": "halle",
+   "x": 38,
+   "y": 0
+  },
+  {
+   "id": "H-4",
+   "bereich": "halle",
+   "x": 38,
+   "y": 16
+  },
+  {
+   "id": "H-5",
+   "bereich": "halle",
+   "x": 44,
+   "y": 10
+  },
+  {
+   "id": "H-6",
+   "bereich": "halle",
+   "x": 50,
+   "y": 0
+  },
+  {
+   "id": "H-7",
+   "bereich": "halle",
+   "x": 50,
+   "y": 16
+  },
+  {
+   "id": "H-8",
+   "bereich": "halle",
+   "x": 56,
+   "y": 10
+  },
+  {
+   "id": "H-9",
+   "bereich": "halle",
+   "x": 60,
+   "y": 0
+  },
+  {
+   "id": "H-10",
+   "bereich": "halle",
+   "x": 60,
+   "y": 16
+  },
+  {
+   "id": "H-11",
+   "bereich": "halle",
+   "x": 34,
+   "y": 10
+  },
+  {
+   "id": "H-12",
+   "bereich": "halle",
+   "x": 62,
+   "y": 10
+  },
+  {
+   "id": "B-1",
+   "bereich": "B",
+   "x": 72,
+   "y": 3
+  },
+  {
+   "id": "B-2",
+   "bereich": "B",
+   "x": 78,
+   "y": 3
+  },
+  {
+   "id": "B-3",
+   "bereich": "B",
+   "x": 84,
+   "y": 3
+  },
+  {
+   "id": "B-4",
+   "bereich": "B",
+   "x": 72,
+   "y": 13
+  },
+  {
+   "id": "B-5",
+   "bereich": "B",
+   "x": 78,
+   "y": 13
+  },
+  {
+   "id": "B-6",
+   "bereich": "B",
+   "x": 84,
+   "y": 13
+  }
+ ]
+}

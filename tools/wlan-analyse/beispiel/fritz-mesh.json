@@ -1,0 +1,389 @@
+{
+ "schema_version": "5.2",
+ "nodes": [
+  {
+   "uid": "n-box",
+   "device_name": "FRITZ!Box 7590",
+   "device_model": "FRITZ!Box 7590",
+   "device_manufacturer": "AVM",
+   "device_mac_address": "3C:A6:2F:11:22:30",
+   "is_meshed": true,
+   "mesh_role": "master",
+   "node_interfaces": [
+    {
+     "uid": "ni-box-lan",
+     "name": "LAN:1",
+     "type": "LAN",
+     "mac_address": "3C:A6:2F:11:22:30",
+     "node_links": []
+    },
+    {
+     "uid": "ni-box-2g",
+     "name": "AP:2G:0",
+     "type": "WLAN",
+     "mac_address": "3C:A6:2F:11:22:33",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 6,
+     "steering_enabled": true,
+     "node_links": [
+      {
+       "uid": "nl-n-c1",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-box",
+       "node_2_uid": "n-c1",
+       "node_interface_1_uid": "ni-box-2g",
+       "node_interface_2_uid": "ni-n-c1",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -63
+      }
+     ]
+    },
+    {
+     "uid": "ni-box-5g",
+     "name": "AP:5G:0",
+     "type": "WLAN",
+     "mac_address": "3C:A6:2F:11:22:34",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 36,
+     "steering_enabled": true,
+     "node_links": [
+      {
+       "uid": "nl-1",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-box",
+       "node_2_uid": "n-rh",
+       "node_interface_1_uid": "ni-box-5g",
+       "node_interface_2_uid": "ni-rh-up",
+       "cur_data_rate_rx": 104000,
+       "cur_data_rate_tx": 86000,
+       "max_data_rate_rx": 1201000,
+       "max_data_rate_tx": 1201000
+      }
+     ]
+    },
+    {
+     "uid": "ni-box-gast",
+     "name": "AP:2G:1",
+     "type": "WLAN",
+     "mac_address": "3E:A6:2F:11:22:33",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box Gastzugang",
+     "current_channel": 6,
+     "steering_enabled": true,
+     "node_links": []
+    }
+   ]
+  },
+  {
+   "uid": "n-rh",
+   "device_name": "Repeater Halle",
+   "device_model": "FRITZ!Repeater 1200 AX",
+   "device_manufacturer": "AVM",
+   "device_mac_address": "E0:28:6D:44:55:60",
+   "is_meshed": true,
+   "mesh_role": "slave",
+   "node_interfaces": [
+    {
+     "uid": "ni-rh-up",
+     "name": "UPLINK:5G:0",
+     "type": "WLAN",
+     "mac_address": "E0:28:6D:44:55:65",
+     "opmode": "REPEATER",
+     "ssid": "",
+     "current_channel": 36,
+     "node_links": [
+      {
+       "uid": "nl-1",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-box",
+       "node_2_uid": "n-rh",
+       "node_interface_1_uid": "ni-box-5g",
+       "node_interface_2_uid": "ni-rh-up",
+       "cur_data_rate_rx": 104000,
+       "cur_data_rate_tx": 86000,
+       "max_data_rate_rx": 1201000,
+       "max_data_rate_tx": 1201000
+      }
+     ]
+    },
+    {
+     "uid": "ni-rh-2g",
+     "name": "AP:2G:0",
+     "type": "WLAN",
+     "mac_address": "E0:28:6D:44:55:66",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 6,
+     "steering_enabled": true,
+     "node_links": [
+      {
+       "uid": "nl-n-c2",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rh",
+       "node_2_uid": "n-c2",
+       "node_interface_1_uid": "ni-rh-2g",
+       "node_interface_2_uid": "ni-n-c2",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -75
+      }
+     ]
+    },
+    {
+     "uid": "ni-rh-5g",
+     "name": "AP:5G:0",
+     "type": "WLAN",
+     "mac_address": "E0:28:6D:44:55:67",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 36,
+     "steering_enabled": true,
+     "node_links": [
+      {
+       "uid": "nl-2",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rh",
+       "node_2_uid": "n-rb",
+       "node_interface_1_uid": "ni-rh-5g",
+       "node_interface_2_uid": "ni-rb-up",
+       "cur_data_rate_rx": 39000,
+       "cur_data_rate_tx": 26000,
+       "max_data_rate_rx": 2402000,
+       "max_data_rate_tx": 2402000
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "uid": "n-rb",
+   "device_name": "Repeater B",
+   "device_model": "FRITZ!Repeater 3000 AX",
+   "device_manufacturer": "AVM",
+   "device_mac_address": "DC:15:C8:77:88:90",
+   "is_meshed": true,
+   "mesh_role": "slave",
+   "node_interfaces": [
+    {
+     "uid": "ni-rb-up",
+     "name": "UPLINK:5G:0",
+     "type": "WLAN",
+     "mac_address": "DC:15:C8:77:88:95",
+     "opmode": "REPEATER",
+     "ssid": "",
+     "current_channel": 36,
+     "node_links": [
+      {
+       "uid": "nl-2",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rh",
+       "node_2_uid": "n-rb",
+       "node_interface_1_uid": "ni-rh-5g",
+       "node_interface_2_uid": "ni-rb-up",
+       "cur_data_rate_rx": 39000,
+       "cur_data_rate_tx": 26000,
+       "max_data_rate_rx": 2402000,
+       "max_data_rate_tx": 2402000
+      }
+     ]
+    },
+    {
+     "uid": "ni-rb-2g",
+     "name": "AP:2G:0",
+     "type": "WLAN",
+     "mac_address": "DC:15:C8:77:88:99",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 6,
+     "steering_enabled": true,
+     "node_links": [
+      {
+       "uid": "nl-n-c3",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rb",
+       "node_2_uid": "n-c3",
+       "node_interface_1_uid": "ni-rb-2g",
+       "node_interface_2_uid": "ni-n-c3",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -79
+      },
+      {
+       "uid": "nl-n-c4",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rb",
+       "node_2_uid": "n-c4",
+       "node_interface_1_uid": "ni-rb-2g",
+       "node_interface_2_uid": "ni-n-c4",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -66
+      }
+     ]
+    },
+    {
+     "uid": "ni-rb-5g",
+     "name": "AP:5G:0",
+     "type": "WLAN",
+     "mac_address": "DC:15:C8:77:88:9A",
+     "opmode": "AP",
+     "ssid": "FRITZ!Box 7590 Musterbetrieb",
+     "current_channel": 36,
+     "steering_enabled": true,
+     "node_links": []
+    }
+   ]
+  },
+  {
+   "uid": "n-c1",
+   "device_name": "wlan-zentrale",
+   "device_model": "",
+   "device_mac_address": "24:0A:C4:A1:00:01",
+   "is_meshed": false,
+   "mesh_role": "unknown",
+   "node_interfaces": [
+    {
+     "uid": "ni-n-c1",
+     "name": "",
+     "type": "WLAN",
+     "mac_address": "24:0A:C4:A1:00:01",
+     "opmode": "STA",
+     "node_links": [
+      {
+       "uid": "nl-n-c1",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-box",
+       "node_2_uid": "n-c1",
+       "node_interface_1_uid": "ni-box-2g",
+       "node_interface_2_uid": "ni-n-c1",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -63
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "uid": "n-c2",
+   "device_name": "sonde-halle-mitte",
+   "device_model": "",
+   "device_mac_address": "24:0A:C4:A1:00:02",
+   "is_meshed": false,
+   "mesh_role": "unknown",
+   "node_interfaces": [
+    {
+     "uid": "ni-n-c2",
+     "name": "",
+     "type": "WLAN",
+     "mac_address": "24:0A:C4:A1:00:02",
+     "opmode": "STA",
+     "node_links": [
+      {
+       "uid": "nl-n-c2",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rh",
+       "node_2_uid": "n-c2",
+       "node_interface_1_uid": "ni-rh-2g",
+       "node_interface_2_uid": "ni-n-c2",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -75
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "uid": "n-c3",
+   "device_name": "sonde-halle-tor",
+   "device_model": "",
+   "device_mac_address": "24:0A:C4:A1:00:03",
+   "is_meshed": false,
+   "mesh_role": "unknown",
+   "node_interfaces": [
+    {
+     "uid": "ni-n-c3",
+     "name": "",
+     "type": "WLAN",
+     "mac_address": "24:0A:C4:A1:00:03",
+     "opmode": "STA",
+     "node_links": [
+      {
+       "uid": "nl-n-c3",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rb",
+       "node_2_uid": "n-c3",
+       "node_interface_1_uid": "ni-rb-2g",
+       "node_interface_2_uid": "ni-n-c3",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -79
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "uid": "n-c4",
+   "device_name": "sonde-b-eg",
+   "device_model": "",
+   "device_mac_address": "24:0A:C4:A1:00:04",
+   "is_meshed": false,
+   "mesh_role": "unknown",
+   "node_interfaces": [
+    {
+     "uid": "ni-n-c4",
+     "name": "",
+     "type": "WLAN",
+     "mac_address": "24:0A:C4:A1:00:04",
+     "opmode": "STA",
+     "node_links": [
+      {
+       "uid": "nl-n-c4",
+       "type": "WLAN",
+       "state": "CONNECTED",
+       "node_1_uid": "n-rb",
+       "node_2_uid": "n-c4",
+       "node_interface_1_uid": "ni-rb-2g",
+       "node_interface_2_uid": "ni-n-c4",
+       "cur_data_rate_rx": 65000,
+       "cur_data_rate_tx": 72200,
+       "max_data_rate_rx": 72200,
+       "max_data_rate_tx": 72200,
+       "rx_rcpi": -66
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
