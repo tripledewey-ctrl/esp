@@ -33,6 +33,7 @@ SOURCES = [
     ("WLED", "wled/README.md"),
     ("WLED", "wled/config/README.md"),
     ("Projekte", "projects/[!_]*/README.md"),
+    ("Werkzeuge", "tools/*/README.md"),
 ]
 # Feste Seitennamen, wo die Überschrift nicht passt
 PAGE_NAMES = {
@@ -70,6 +71,9 @@ def page_name(rel, path):
     t = title(path)
     if rel.startswith("projects/"):
         t = "Projekt " + t
+    elif rel.startswith("tools/"):
+        t = "Werkzeug " + t
+    t = t.translate(str.maketrans({"ä": "ae", "ö": "oe", "ü": "ue", "Ä": "Ae", "Ö": "Oe", "Ü": "Ue", "ß": "ss"}))
     return re.sub(r"[^A-Za-z0-9.]+", "-", t).strip("-")
 
 

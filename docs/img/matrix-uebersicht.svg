@@ -1,0 +1,84 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='652' height='412' viewBox='0 0 652 412'>
+<rect width='100%' height='100%' fill='#ffffff'/>
+<text x='20' y='30' font-size='18' font-weight='bold' fill='#111' font-family='DejaVu Sans, Arial, sans-serif'>LED-Matrix der Zentrale: Gebäude-Übersicht</text>
+<rect x='52' y='62' width='288' height='288' rx='8' fill='#1f3d2b'/>
+<circle cx='77.0' cy='87.0' r='12.24' fill='#00c800'/>
+<circle cx='111.0' cy='87.0' r='12.24' fill='#00c800'/>
+<circle cx='145.0' cy='87.0' r='12.24' fill='#00c800'/>
+<circle cx='179.0' cy='87.0' r='12.24' fill='#ffc800'/>
+<circle cx='213.0' cy='87.0' r='12.24' fill='#ffc800'/>
+<circle cx='247.0' cy='87.0' r='12.24' fill='#80ff00'/>
+<circle cx='281.0' cy='87.0' r='12.24' fill='#80ff00'/>
+<circle cx='315.0' cy='87.0' r='12.24' fill='#80ff00'/>
+<circle cx='77.0' cy='121.0' r='12.24' fill='#80ff00'/>
+<circle cx='111.0' cy='121.0' r='12.24' fill='#80ff00'/>
+<circle cx='145.0' cy='121.0' r='12.24' fill='#80ff00'/>
+<circle cx='179.0' cy='121.0' r='12.24' fill='#ff4600'/>
+<circle cx='213.0' cy='121.0' r='12.24' fill='#ff4600'/>
+<circle cx='247.0' cy='121.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='121.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='121.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='155.0' r='12.24' fill='#000060'/>
+<circle cx='213.0' cy='155.0' r='12.24' fill='#000060'/>
+<circle cx='247.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='155.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='213.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='247.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='189.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='213.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='247.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='223.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='213.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='247.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='257.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='213.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='247.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='291.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='111.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='145.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='179.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='213.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='247.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='281.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='315.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<circle cx='77.0' cy='325.0' r='12.24' fill='#2b2b2b'/>
+<text x='111.0' y='54' text-anchor='middle' font-size='12' font-weight='bold' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>Gebäude A</text>
+<text x='196.0' y='54' text-anchor='middle' font-size='12' font-weight='bold' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>Halle</text>
+<line x1='162' y1='62' x2='162' y2='350' stroke='#fff' stroke-opacity='.35' stroke-dasharray='3 3'/>
+<text x='281.0' y='54' text-anchor='middle' font-size='12' font-weight='bold' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>Gebäude B</text>
+<line x1='230' y1='62' x2='230' y2='350' stroke='#fff' stroke-opacity='.35' stroke-dasharray='3 3'/>
+<text x='362' y='78' font-size='13' font-weight='bold' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>Je Sonde eine Zeile,</text>
+<text x='362' y='96' font-size='13' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>Spalte nach „Bereich“:</text>
+<circle cx='370' cy='126' r='8' fill='#00c800'/><text x='386' y='130' font-size='12.5' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>grün … rot: Signalstärke der Sonde</text>
+<circle cx='370' cy='156' r='8' fill='#ff4600'/><text x='386' y='160' font-size='12.5' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>orange/rot: schwach bzw. kritisch</text>
+<circle cx='370' cy='186' r='8' fill='#000060'/><text x='386' y='190' font-size='12.5' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>blau blinkend: Sonde meldet sich nicht</text>
+<circle cx='370' cy='216' r='8' fill='#ff0000'/><text x='386' y='220' font-size='12.5' fill='#24292f' font-family='DejaVu Sans, Arial, sans-serif'>rot blinkend: Sonde nicht verbunden</text>
+<text x='362' y='270' font-size='12' fill='#57606a' font-family='DejaVu Sans, Arial, sans-serif'>BOOT kurz: Übersicht ↔ eigene</text>
+<text x='362' y='286' font-size='12' fill='#57606a' font-family='DejaVu Sans, Arial, sans-serif'>Signalstärke der Zentrale</text>
+<text x='60' y='382' font-size='11' fill='#8c959f' font-family='DejaVu Sans, Arial, sans-serif'>Beispiel: Halle-Tor schwach, eine Hallen-Sonde meldet sich nicht.</text>
+</svg>

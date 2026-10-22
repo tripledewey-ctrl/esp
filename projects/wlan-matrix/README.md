@@ -146,6 +146,9 @@ Neustart verbindet sich der ESP32 wieder mit dem Knoten, den der Router vorgibt.
 
 Weitere allgemeine Hilfe: [Fehlerbehebung](../../docs/05-fehlerbehebung.md).
 
+Für mehrere Messstellen, Dauermessung und einen Bericht mit Lageplan gibt es das
+[WLAN-Analyse-Modul](../../docs/06-wlan-analyse.md) ([`wlan-sonde`](../wlan-sonde) + `tools/wlan-analyse`).
+
 ## Einordnung der Messwerte
 
 - Die Antenne eines ESP32-DevKits empfängt schlechter als ein Smartphone. Die Werte

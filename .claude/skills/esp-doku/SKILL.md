@@ -22,6 +22,7 @@ Dieses Repo ist die Wissensbasis für ESP-Boards, PlatformIO und WLED. Antworten
 | Projekte                       | `projects/<name>/` (Vorlage `_template`), Doku in `docs/04-eigene-projekte.md` |
 | CI                             | `.github/workflows/build.yml`                                        |
 | Konsistenzprüfung              | `scripts/check-docs.py`                                              |
+| WLAN-Analyse-Modul             | Anleitung `docs/06-wlan-analyse.md`, Firmware `projects/wlan-sonde`, Auswertung `tools/wlan-analyse` (Python, Tests in `tests/`) |
 | GitHub-Wiki                    | wird aus den Dateien oben erzeugt: `scripts/build-wiki.py`, veröffentlicht von `.github/workflows/wiki.yml` |
 
 ## 1. Fragen beantworten
@@ -72,6 +73,9 @@ Eingaben klären: genaue Board-Bezeichnung und Version, Chip/Modul (Aufdruck ode
 | Neue PlatformIO-Plattform    | `platform = espressif32@…` / `espressif8266@…` in `boards/boards.ini`, danach alle Projekte bauen |
 | Korrektur an einem Board     | Board-Seite **und** JSON-Spec ändern, Bild neu erzeugen                           |
 | Neues Projekt                | `./scripts/new-project.sh <name>`, README im Projekt, Tabelle in `docs/04-eigene-projekte.md`, CI-Liste |
+| Datenformat der WLAN-Analyse | `messungAlsJson()`/`messungAusJson()` in `projects/wlan-sonde/src/messung.cpp`, `messung_aus_dict()` in `tools/wlan-analyse/wlan_analyse/daten.py`, Testzeilen `FIRMWARE_*` in `tools/wlan-analyse/tests/test_wlan_analyse.py` und Tabelle „Datenformat“ in `docs/06-wlan-analyse.md` **immer gemeinsam** ändern |
+| Bewertungsgrenzen (dBm)      | `STUFEN`/`ZIEL_DBM` in `tools/wlan-analyse/wlan_analyse/__init__.py`, `rssiBewertung()`/`farbe()` in der Firmware, Tabellen in `docs/06-wlan-analyse.md` und `projects/wlan-matrix/README.md` |
+| Beispieldaten der Analyse    | `python3 tools/wlan-analyse/beispiel/erzeugen.py` ausführen und das Ergebnis mit einchecken (die CI vergleicht) |
 
 Versionsangaben repo-weit finden: `grep -rn "v0\.1[0-9]\.\|espressif32@\|espressif8266@" --include=*.md --include=*.ini --include=*.sh --include=*.yml .`
 
@@ -88,11 +92,24 @@ Ist die PlatformIO-Registry nicht erreichbar (z. B. in gesperrten Umgebungen), m
 `pio project config` ausführen und das Bauen der GitHub Action überlassen. Im Bericht
 dann klar sagen, was wirklich kompiliert wurde und was nicht.
 
+## WLAN-Abdeckung analysieren
+
+Bei Fragen wie „Warum ist das WLAN in der Halle schlecht?“ oder „Wo stelle ich den Repeater hin?“:
+
+1. Vorgehen und Maßnahmenkatalog aus `docs/06-wlan-analyse.md` nutzen.
+2. Liegen Messdaten vor (`tools/wlan-analyse/daten/`, nicht im Git), den Bericht erzeugen:
+   `cd tools/wlan-analyse && python3 -m wlan_analyse bericht -s daten/standort.json -m daten/*.jsonl --mesh daten/fritz-mesh.json -o daten/bericht.html --json daten/ergebnis.json`
+   und die Befunde aus `daten/ergebnis.json` erklären.
+3. Neue Prüfregeln gehören in `befunde()` in `wlan_analyse/analyse.py` – mit Test in `tests/` und Eintrag in der Tabelle
+   „Was der Bericht prüft“ in `tools/wlan-analyse/README.md`.
+4. Firmware-Änderungen an `wlan-sonde` lokal bauen (`pio run -d projects/wlan-sonde`); Python-Teil mit
+   `python3 -m unittest discover -s tests` im Ordner `tools/wlan-analyse` prüfen.
+
 ## Wiki
 
 Das Wiki ist **generiert**. Inhalte nie im Wiki selbst ändern, sondern im Repo.
 Welche Dateien zu Wiki-Seiten werden, steht in `SOURCES` in `scripts/build-wiki.py`:
-Root-README, `docs/0*.md`, `docs/boards/*.md`, `wled/**/README.md` und `projects/*/README.md`.
+Root-README, `docs/0*.md`, `docs/boards/*.md`, `wled/**/README.md`, `projects/*/README.md` und `tools/*/README.md`.
 Neue Board-Seiten und Projekte erscheinen automatisch. Für eine neue Doku-Kategorie
 `SOURCES` ergänzen und die Workflow-`paths` prüfen.
 

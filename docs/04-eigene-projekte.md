@@ -31,6 +31,7 @@ pio run -e esp32dev -t upload -t monitor
 | [`sensor-mqtt`](../projects/sensor-mqtt)             | BME280 → MQTT, Home-Assistant-Discovery         |
 | [`matrix-demo`](../projects/matrix-demo)             | Waveshare ESP32-S3-Matrix: Pixel-/Farbtest, Effekte |
 | [`wlan-matrix`](../projects/wlan-matrix)             | WLAN-Ausleuchtung/Mesh-Knoten auf LED-Matrix + Weboberfläche, WiFiManager-Portal |
+| [`wlan-sonde`](../projects/wlan-sonde)               | WLAN-Analyse-Modul: Sonde, Begehung, Zentrale – Auswertung mit [`tools/wlan-analyse`](../tools/wlan-analyse) |
 
 Ein Projekt kopieren statt der Vorlage: `cp -r projects/webserver-ota projects/neu`.
 
