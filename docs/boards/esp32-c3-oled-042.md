@@ -60,6 +60,7 @@ pio run -e esp32c3_oled -t upload -t monitor
 | Zweck     | Einstellung |
 |-----------|-------------|
 | Projekte  | `[env:esp32c3_oled]` mit `extends = esp32c3_oled_base` (in `blink`, `oled-demo`, `_template`) |
+| WLAN-Analyse | [`wlan-sonde`](../../projects/wlan-sonde) Env `esp32c3_oled`: handliches Begehungsgerät (Rolle „mobil“), Anzeige von Signal, Fortschritt und Punkten |
 | Defines   | `OLED_SDA_PIN=5`, `OLED_SCL_PIN=6`, `OLED_WIDTH=72`, `OLED_HEIGHT=40`, `LED_BUILTIN_PIN=8`, `LED_ACTIVE_LOW=1` |
 | USB       | `ARDUINO_USB_MODE=1`, `ARDUINO_USB_CDC_ON_BOOT=1` (aus `esp32c3_base`) – sonst keine serielle Ausgabe |
 | Display   | U8g2: `U8G2_SSD1306_72X40_ER_F_HW_I2C(U8G2_R0, U8X8_PIN_NONE, 6, 5)` – Reset, SCL, SDA |

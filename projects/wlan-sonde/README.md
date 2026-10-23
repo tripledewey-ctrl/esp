@@ -28,6 +28,12 @@ Gemessen wird je Messung:
 | `esp32c3` | ESP32-C3 (Super Mini) | kleine Sonde, BOOT = GPIO9 |
 | `esp32s3` | ESP32-S3-DevKitC-1 | ohne Anzeige |
 | `waveshare_s3_matrix` | [Waveshare ESP32-S3-Matrix](../../docs/boards/waveshare-esp32-s3-matrix.md) | **voreingestellt als Zentrale**, Puffer im PSRAM (6000 Messungen) |
+| `esp32c3_oled` | [ESP32-C3 mit 0,42″-OLED](../../docs/boards/esp32-c3-oled-042.md) | **voreingestellt als Mobil**, OLED 72×40, BOOT = GPIO9 |
+| `doit_devkit_v1` | [DOIT ESP32 DevKit V1](../../docs/boards/doit-esp32-devkit-v1.md) | feste Sonde ohne Anzeige |
+| `doit_devkit_v1_oled` | DOIT DevKit V1 + 0,96″-OLED (SSD1306 128×64) an SDA 21 / SCL 22 | Sonde mit Vor-Ort-Anzeige oder Zentrale mit Sondenliste |
+
+ESP8266-Boards (NodeMCU, Heltec WiFi Kit 8) laufen mit dieser Firmware nicht. Sie nutzt
+ESP32-Funktionen (WLAN-Ereignisse mit Abbruchgrund, Preferences, PSRAM).
 
 ```bash
 cd projects/wlan-sonde
@@ -49,6 +55,25 @@ die IP-Adresse eintragen. Statt einer ESP32-Zentrale kann auch ein PC sammeln:
 |---|---|---|---|
 | kurz | sofort messen | Messpunkt `P<n>` aufnehmen | Matrix: Übersicht ↔ eigene Signalstärke |
 | lang (> 3 s) | WLAN-Daten löschen, Portal öffnen | ← | ← |
+
+## OLED-Anzeige
+
+Ist `OLED_WIDTH` gesetzt (72×40 oder 128×64, SSD1306), zeigt das Gerät statt der Matrix
+Textseiten an. Die Seiten wechseln alle 4 s (`OLED_SEITE_MS`).
+
+| Phase / Rolle | Seiten | 0,42″ (72×40) | 0,96″ (128×64) |
+|---|---|---|---|
+| Start | Zustand | „Verbinde“, „Portal offen“ + Hotspot-Name + Passwort, „Verbunden“ + IP | ← |
+| Sonde, Zentrale (eigene Werte) | ① Signal | Kanal + Bewertung, **große dBm-Zahl**, Balken | zusätzlich Gerätename und verbundener AP (BSSID-Ende) |
+| | ② Mesh | Anzahl Knoten, 3 Knoten mit dBm, `*` = verbunden | 5 Knoten mit Kanal und dBm |
+| | ③ Stabilität | Router-Antwortzeit, Verlust, Abbrüche/AP-Wechsel | + Min/Max-dBm, Fremdnetze auf dem eigenen Kanal, Alter der Messung |
+| | ④ Gerät | Name, Rolle + Bereich, IP, nicht gesendete Messungen (Sonde) bzw. Puffer (Zentrale) | ← |
+| Mobil | Signal, Gerät (Anzahl Punkte) – **während der Messung Fortschrittsbalken** mit Punkt-ID | ← |
+| Zentrale (Übersicht) | Sondenliste: Name + dBm, `!` = meldet sich nicht, `x` = offline; danach eigenes Signal | Name, Bereich, dBm; 5 Sonden je Seite |
+| Verbindung weg | „WLAN weg“, Abbrüche, offene Messungen | ← |
+
+Die BOOT-Taste schaltet bei der Zentrale zwischen Sondenliste und eigenen Werten um,
+genau wie bei der Matrix.
 
 ## Weboberfläche
 

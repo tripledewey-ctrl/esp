@@ -63,6 +63,7 @@ pio run -e doit_devkit_v1 -t upload -t monitor
 |-----------|-------------|
 | Projekte  | `[env:doit_devkit_v1]` mit `extends = doit_devkit_v1_base` (in `blink`, `oled-demo`, `_template`); `esp32dev` funktioniert ebenso |
 | OLED-Test | [`projects/oled-demo`](../../projects/oled-demo) mit externem SSD1306 128×64 an 21/22 |
+| WLAN-Analyse | [`wlan-sonde`](../../projects/wlan-sonde) Env `doit_devkit_v1` (feste Sonde) bzw. `doit_devkit_v1_oled` (mit 0,96″-OLED) |
 | WLED      | Env `wled_esp32` in [`wled/platformio_override.ini`](../../wled/platformio_override.ini), LED-Daten an GPIO16 (RX2) |
 
 ## Typische Probleme

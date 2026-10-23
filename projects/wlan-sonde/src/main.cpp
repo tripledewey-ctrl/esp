@@ -36,7 +36,7 @@ static uint32_t letzteMessung_ms = 0;
 
 void wlanZuruecksetzen() {
   ereignis("WLAN-Zugangsdaten werden gelöscht");
-  anzeigeFarbe(0, 0, 120);
+  anzeigeZustand(Zustand::Zuruecksetzen);
   WiFi.persistent(true);
   WiFiManager wm;
   wm.resetSettings();
@@ -115,14 +115,14 @@ void setup() {
   wm.addParameter(&pIntervall);
   wm.setHostname(cfg.name.c_str());
   wm.setConfigPortalTimeout(300);
-  wm.setAPCallback([](WiFiManager*) { anzeigeFarbe(0, 0, 120); });
+  wm.setAPCallback([](WiFiManager* w) { anzeigeZustand(Zustand::Portal, w->getConfigPortalSSID().c_str()); });
 
   String apName = "WLAN-Sonde-" + WiFi.macAddress().substring(12);
   apName.replace(":", "");
-  anzeigeFarbe(60, 60, 0);                            // gelb = verbinde …
+  anzeigeZustand(Zustand::Verbinde);                  // Matrix: gelb
   if (!wm.autoConnect(apName.c_str(), AP_PASS)) {
     Serial.println("Keine Verbindung – Neustart");
-    anzeigeFarbe(120, 0, 0);
+    anzeigeZustand(Zustand::Fehler);
     delay(2000);
     ESP.restart();
   }
@@ -150,7 +150,7 @@ void setup() {
 
   ereignis("Gestartet als %s, http://%s.local/ (%s)", rolleName(cfg.rolle), cfg.name.c_str(),
            WiFi.localIP().toString().c_str());
-  anzeigeFarbe(0, 60, 0);
+  anzeigeZustand(Zustand::Verbunden, WiFi.localIP().toString().c_str());
   delay(300);
   letzteMessung_ms = millis() - cfg.intervall * 1000UL + 5000;   // erste Messung nach 5 s
 }

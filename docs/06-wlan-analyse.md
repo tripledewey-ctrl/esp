@@ -88,7 +88,13 @@ zeigt, ob und wo das nötig ist, und weist die Verbesserung nach der Umsetzung n
 |---|---|---|
 | Zentrale mit Anzeige | [Waveshare ESP32-S3-Matrix](boards/waveshare-esp32-s3-matrix.md) | `waveshare_s3_matrix` (Rolle ist voreingestellt) |
 | feste Sonde | [ESP32-DevKitC](boards/esp32-devkitc.md) oder ESP32-C3 Super Mini | `esp32dev`, `esp32c3` |
-| Mobil | beliebiges ESP32-Board, gern mit Matrix für den Fortschritt | `esp32dev`, `esp32dev_matrix`, `waveshare_s3_matrix` |
+| Mobil | beliebiges ESP32-Board, gern mit Anzeige für den Fortschritt | `esp32dev`, `esp32dev_matrix`, `waveshare_s3_matrix` |
+| Mobil, handlich | [ESP32-C3 mit 0,42″-OLED](boards/esp32-c3-oled-042.md) an einer Powerbank | `esp32c3_oled` (Rolle „mobil“ voreingestellt) |
+| Sonde oder Zentrale mit Textanzeige | [DOIT ESP32 DevKit V1](boards/doit-esp32-devkit-v1.md) + 0,96″-OLED 128×64 | `doit_devkit_v1_oled` (ohne OLED: `doit_devkit_v1`) |
+
+**Eigene Boards** ([Zuordnung per Foto](boards/README.md#eigene-boards-zuordnen)): Waveshare-Matrix
+= Zentrale, C3-OLED = Begehung, DOIT V1 und DevKitC = feste Sonden. NodeMCU und Heltec
+WiFi Kit 8 sind ESP8266 und werden von `wlan-sonde` nicht unterstützt.
 
 Alle Geräte möglichst **gleich bauen** (gleiches Board, gleiche Antenne, gleiche Ausrichtung).
 Nur dann sind die Werte untereinander vergleichbar.
@@ -147,6 +153,10 @@ Alles lässt sich später in der Weboberfläche unter **Einstellungen** ändern 
 Die Zentrale zeigt auf der LED-Matrix je Sonde eine Zeile, aufgeteilt in **A | Halle | B**:
 
 <p align="center"><img src="img/matrix-uebersicht.svg" alt="LED-Matrix der Zentrale: Gebäude-Übersicht" width="560"></p>
+
+Geräte mit **OLED** zeigen statt Farben wechselnde Textseiten (alle 4 s). Die Seiten stehen in
+[`projects/wlan-sonde`](../projects/wlan-sonde/README.md#oled-anzeige). Beim Einrichten steht der
+Name des Hotspots direkt auf dem Display.
 
 ### ③ Begehung
 

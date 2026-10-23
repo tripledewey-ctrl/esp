@@ -6,3 +6,4 @@
 
 void senderLoop();
 void senderStatus(JsonObject o);
+uint32_t senderOffen();        // noch nicht an die Zentrale gesendete Messungen

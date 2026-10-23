@@ -90,11 +90,13 @@ void senderLoop() {
   gesperrtBis = millis() + PAUSE_NACH_FEHLER;
 }
 
+uint32_t senderOffen() { return puffer.gesamt() > naechsteNr ? puffer.gesamt() - naechsteNr : 0; }
+
 void senderStatus(JsonObject o) {
   o["ziel"] = cfg.zentrale;
   o["adresse"] = basisUrl;
   o["gesendet"] = gesendet;
-  o["offen"] = puffer.gesamt() > naechsteNr ? puffer.gesamt() - naechsteNr : 0;
+  o["offen"] = senderOffen();
   o["fehler"] = fehler;
   o["letzter_fehler"] = letzterFehler;
 }

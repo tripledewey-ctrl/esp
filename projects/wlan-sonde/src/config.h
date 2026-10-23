@@ -73,3 +73,21 @@
     #define MAX_MILLIAMPS 1500
   #endif
 #endif
+
+// OLED (optional): aktiv, wenn OLED_WIDTH gesetzt ist und keine LED-Matrix
+// (z. B. aus boards.ini: esp32c3_oled_base, oder per build_flags für ein externes SSD1306)
+#if defined(OLED_WIDTH) && !defined(WLAN_MATRIX)
+  #define WLAN_OLED 1
+  #ifndef OLED_HEIGHT
+    #define OLED_HEIGHT 64
+  #endif
+  #ifndef OLED_SDA_PIN
+    #define OLED_SDA_PIN SDA
+  #endif
+  #ifndef OLED_SCL_PIN
+    #define OLED_SCL_PIN SCL
+  #endif
+  #ifndef OLED_SEITE_MS
+    #define OLED_SEITE_MS 4000          // ms je Seite
+  #endif
+#endif
