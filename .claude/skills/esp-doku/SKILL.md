@@ -15,6 +15,7 @@ Dieses Repo ist die Wissensbasis für ESP-Boards, PlatformIO und WLED. Antworten
 | Übersicht, Schnellstart        | `README.md`                                                          |
 | Board-Übersicht + Bezeichnungen| `docs/boards/README.md`                                              |
 | Eine Seite pro Board           | `docs/boards/<board>.md` (Vorlage: `docs/boards/_vorlage.md`)        |
+| Fotos der eigenen Boards       | `docs/boards/fotos/<board>.jpg`, Übersicht `fotos/uebersicht.jpg` (Zuordnungstabelle in `docs/boards/README.md`) |
 | Board-Bilder                   | `docs/boards/specs/<board>.json` → `scripts/board-image.py` → `docs/boards/img/<board>.svg` |
 | PlatformIO-Board-Basen         | `boards/boards.ini`                                                  |
 | Allgemeine Anleitungen         | `docs/01-einrichtung.md` … `docs/05-fehlerbehebung.md`              |
@@ -121,6 +122,7 @@ landen in `images/`. Links auf Code zeigen auf GitHub (`blob/main`).
 
 - Sprache der Doku: Deutsch, sachlich, Tabellen statt Fließtext, wo es passt.
 - Keine Herstellerfotos einchecken (Urheberrecht). Bilder sind schematische SVGs aus
-  `scripts/board-image.py` und gehören zur Quelle (JSON-Spec) dazu.
+  `scripts/board-image.py` und gehören zur Quelle (JSON-Spec) dazu. Eigene Fotos des
+  Nutzers sind erlaubt: zugeschnitten, ca. 600 px breit, JPEG, in `docs/boards/fotos/`.
 - Zugangsdaten nie einchecken (`secrets.h`, `wled/config/backup/` sind ignoriert).
 - Pinangaben, die nicht aus einer Quelle belegt sind, als „zu prüfen“ kennzeichnen.

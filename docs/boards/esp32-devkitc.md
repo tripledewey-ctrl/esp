@@ -2,6 +2,8 @@
 
 <p align="center"><img src="img/esp32-devkitc.svg" alt="ESP32-DevKitC V4 Pinbelegung" width="760"></p>
 
+<p align="center"><img src="fotos/esp32-devkitc.jpg" alt="Foto ESP32-DevKitC V4" width="280"><br><em>Eigenes Exemplar: AZ-Delivery-Board im DevKitC-Layout, 38 Pins, Beschriftung G23, G22, CMD … (mit „2“ markiert)</em></p>
+
 Das „Standard-ESP32-Board“. Viele günstige Boards mit 38 Pins (oft als „ESP32 DevKit“,
 „ESP32-WROOM-32 Development Board“ oder „NodeMCU-32S“ verkauft) sind Nachbauten davon.
 
@@ -15,6 +17,10 @@ Das „Standard-ESP32-Board“. Viele günstige Boards mit 38 Pins (oft als „E
 | Modul       | **ESP32-WROOM-32E-N4**              | Chip + 4 MB Flash + 40-MHz-Quarz + PCB-Antenne unter Blechdeckel (ältere Boards: WROOM-32, WROOM-32D) |
 | Board       | **ESP32-DevKitC V4**                | Modul + USB-UART-Wandler + 3,3-V-Regler + EN/BOOT-Taster + 2×19 Pins |
 | PlatformIO  | `esp32dev` → Basis `esp32_base`     | siehe [`boards/boards.ini`](../../boards/boards.ini)             |
+
+**Eigenes Exemplar (Inventar #1, mit „2“ markiert):** AZ-Delivery-Board im DevKitC-Layout,
+38 Pins, Pins beschriftet `G23`, `G22`, `TXD`, `RXD`, `CMD` …, Micro-USB, Modul
+ESP32-WROOM-32 mit AZ-Delivery-Aufdruck. Belegung wie im Bild oben, Env `esp32dev`.
 
 **Varianten:** `ESP32-WROOM-32UE` (U.FL-Antennenbuchse), `ESP32-WROVER-E` (zusätzlich
 8 MB PSRAM; dann sind GPIO16/17 belegt), N8/N16 = 8/16 MB Flash.

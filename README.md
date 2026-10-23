@@ -65,12 +65,17 @@ Die allgemeinen Projekte bringen diese Umgebungen (`-e …`) mit:
 | `esp32c3`   | ESP32-C3-DevKitM-1 / Super Mini        |
 | `nodemcuv2` | ESP8266 NodeMCU                        |
 | `d1mini`    | Wemos/LOLIN D1 mini                    |
+| `doit_devkit_v1` | DOIT ESP32 DevKit V1, 30 Pins (HW-463) |
+| `heltec_wifi_kit_8` | Heltec WiFi Kit 8 (ESP8266 + OLED) |
+| `esp32c3_oled` | ESP32-C3 mit 0,42″-OLED            |
 
 Spezialboard: **Waveshare ESP32-S3-Matrix** → Env `waveshare_s3_matrix` in
 [`projects/matrix-demo`](projects/matrix-demo) und [`projects/wlan-matrix`](projects/wlan-matrix),
 `wled_s3_matrix` für WLED.
 
-Ausführliche Board-Seiten mit Abbildung: [docs/boards/](docs/boards/README.md).
+OLED-Funktionstest: [`projects/oled-demo`](projects/oled-demo).
+
+Ausführliche Board-Seiten mit Abbildung und Foto der eigenen Boards: [docs/boards/](docs/boards/README.md).
 
 ## WLAN-Analyse-Modul
 

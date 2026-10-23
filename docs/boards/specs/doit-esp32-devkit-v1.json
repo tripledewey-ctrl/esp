@@ -1,0 +1,43 @@
+{
+  "title": "DOIT ESP32 DevKit V1 (30 Pins)",
+  "subtitle": "DOIT / Nachbauten (z. B. HW-463) · Modul ESP32-WROOM-32 · 4 MB Flash · 2×15 Pins",
+  "module": "ESP32-WROOM-32",
+  "top": "PCB-Antenne",
+  "bottom": "Micro-USB · USB-UART CP2102 oder CH340 (je nach Nachbau)",
+  "buttons": ["EN", "BOOT"],
+  "led": "LED: GPIO2",
+  "left": [
+    ["EN", "ctrl", "Reset (LOW = Reset)"],
+    ["VP", "input", "GPIO36 · ADC1_0"],
+    ["VN", "input", "GPIO39 · ADC1_3"],
+    ["D34", "input", "GPIO34 · ADC1_6"],
+    ["D35", "input", "GPIO35 · ADC1_7"],
+    ["D32", "gpio", "GPIO32 · ADC1_4 · Touch9"],
+    ["D33", "gpio", "GPIO33 · ADC1_5 · Touch8"],
+    ["D25", "gpio", "GPIO25 · DAC1 · ADC2"],
+    ["D26", "gpio", "GPIO26 · DAC2 · ADC2"],
+    ["D27", "gpio", "GPIO27 · ADC2 · Touch7"],
+    ["D14", "gpio", "GPIO14 · ADC2 · HSPI CLK"],
+    ["D12", "strap", "GPIO12 · beim Boot LOW!"],
+    ["D13", "gpio", "GPIO13 · ADC2 · HSPI MOSI"],
+    ["GND", "gnd"],
+    ["VIN", "power", "5 V Eingang / von USB"]
+  ],
+  "right": [
+    ["D23", "gpio", "GPIO23 · VSPI MOSI"],
+    ["D22", "gpio", "GPIO22 · I2C SCL"],
+    ["TX0", "uart", "GPIO1 · U0TXD"],
+    ["RX0", "uart", "GPIO3 · U0RXD"],
+    ["D21", "gpio", "GPIO21 · I2C SDA"],
+    ["D19", "gpio", "GPIO19 · VSPI MISO"],
+    ["D18", "gpio", "GPIO18 · VSPI CLK"],
+    ["D5", "strap", "GPIO5 · VSPI CS"],
+    ["TX2", "gpio", "GPIO17 · U2TXD"],
+    ["RX2", "gpio", "GPIO16 · U2RXD"],
+    ["D4", "gpio", "GPIO4 · ADC2 · Touch0"],
+    ["D2", "strap", "GPIO2 · Onboard-LED"],
+    ["D15", "strap", "GPIO15 · Boot-Log"],
+    ["GND", "gnd"],
+    ["3V3", "power", "3,3 V Ein-/Ausgang"]
+  ]
+}

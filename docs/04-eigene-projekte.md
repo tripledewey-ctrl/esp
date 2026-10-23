@@ -30,6 +30,7 @@ pio run -e esp32dev -t upload -t monitor
 | [`webserver-ota`](../projects/webserver-ota)         | WLAN, Weboberfläche, JSON-API, mDNS, OTA-Update |
 | [`sensor-mqtt`](../projects/sensor-mqtt)             | BME280 → MQTT, Home-Assistant-Discovery         |
 | [`matrix-demo`](../projects/matrix-demo)             | Waveshare ESP32-S3-Matrix: Pixel-/Farbtest, Effekte |
+| [`oled-demo`](../projects/oled-demo)                 | OLED-Boards (Heltec WiFi Kit 8, ESP32-C3 0,42″) und externes SSD1306: Rahmentest, Chip-Info, WLAN-Scan |
 | [`wlan-matrix`](../projects/wlan-matrix)             | WLAN-Ausleuchtung/Mesh-Knoten auf LED-Matrix + Weboberfläche, WiFiManager-Portal |
 | [`wlan-sonde`](../projects/wlan-sonde)               | WLAN-Analyse-Modul: Sonde, Begehung, Zentrale – Auswertung mit [`tools/wlan-analyse`](../tools/wlan-analyse) |
 

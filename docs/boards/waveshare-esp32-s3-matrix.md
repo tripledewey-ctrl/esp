@@ -2,6 +2,8 @@
 
 <p align="center"><img src="img/waveshare-esp32-s3-matrix.svg" alt="Waveshare ESP32-S3-Matrix" width="620"></p>
 
+<p align="center"><img src="fotos/waveshare-esp32-s3-matrix.jpg" alt="Foto Waveshare ESP32-S3-Matrix" width="280"><br><em>Eigenes Exemplar: Aufdruck „ESP32-S3-Matrix“ auf der Unterkante</em></p>
+
 Sehr kleines ESP32-S3-Board mit einer **8×8 RGB-LED-Matrix** (64 adressierbare LEDs)
 auf der Vorderseite und einem **QMI8658-Lage- und Beschleunigungssensor** (6 Achsen).
 Ideal für Anzeigen, Lagespiele, Statusanzeigen oder als Mini-WLED-Matrix.

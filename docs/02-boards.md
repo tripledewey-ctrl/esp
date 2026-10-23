@@ -13,6 +13,9 @@ Jedes Projekt bindet die Datei ein und erbt mit `extends` von einer Basis:
 | `esp32c3_base`  | `esp32c3`             | ESP32-C3-DevKitM-1, C3 Super Mini      | `esp32-c3-devkitm-1`  |
 | `esp8266_base`  | `nodemcuv2`           | NodeMCU v2/v3 (ESP-12E/F)              | `nodemcuv2`           |
 | `d1mini_base`   | `d1mini`              | Wemos/LOLIN D1 mini                    | `d1_mini`             |
+| `doit_devkit_v1_base` | `doit_devkit_v1` | DOIT ESP32 DevKit V1, 30 Pins (HW-463) | `esp32doit-devkit-v1` |
+| `heltec_wifi_kit_8_base` | `heltec_wifi_kit_8` | Heltec WiFi Kit 8 (ESP8266 + OLED 128×32) | `heltec_wifi_kit_8` |
+| `esp32c3_oled_base` | `esp32c3_oled`    | ESP32-C3 mit 0,42″-OLED 72×40           | `esp32-c3-devkitm-1`  |
 
 Ein neues Board ergänzen: Sektion in `boards/boards.ini` anlegen (Board-ID
 über `pio boards esp32` bzw. `pio boards esp8266` suchen) und in den Projekten
