@@ -1,0 +1,43 @@
+{
+  "title": "NodeMCU V2 (ESP8266, ESP-12E/F)",
+  "subtitle": "NodeMCU / Amica-Nachbau · Modul ESP-12E/F · Chip ESP8266EX · 4 MB Flash · 2×15 Pins",
+  "module": "ESP-12E / ESP-12F",
+  "top": "PCB-Antenne",
+  "bottom": "Micro-USB · USB-UART CP2102 (V2) bzw. CH340 (LoLin „V3“)",
+  "buttons": ["RST", "FLASH"],
+  "led": "LEDs: GPIO2 + GPIO16",
+  "left": [
+    ["A0", "input", "ADC · Board-Teiler bis 3,3 V"],
+    ["RSV", "flash", "nicht belegt"],
+    ["RSV", "flash", "nicht belegt"],
+    ["SD3", "flash", "GPIO10 · Flash"],
+    ["SD2", "flash", "GPIO9 · Flash"],
+    ["SD1", "flash", "GPIO8 · Flash"],
+    ["CMD", "flash", "GPIO11 · Flash"],
+    ["SD0", "flash", "GPIO7 · Flash"],
+    ["CLK", "flash", "GPIO6 · Flash"],
+    ["GND", "gnd"],
+    ["3V3", "power", "3,3 V"],
+    ["EN", "ctrl", "Chip Enable"],
+    ["RST", "ctrl", "Reset (LOW = Reset)"],
+    ["GND", "gnd"],
+    ["VIN", "power", "5 V Eingang / von USB"]
+  ],
+  "right": [
+    ["D0", "gpio", "GPIO16 · LED · Deep-Sleep-Wake"],
+    ["D1", "gpio", "GPIO5 · I2C SCL"],
+    ["D2", "gpio", "GPIO4 · I2C SDA"],
+    ["D3", "strap", "GPIO0 · FLASH-Taste"],
+    ["D4", "strap", "GPIO2 · LED · Boot HIGH"],
+    ["3V3", "power", "3,3 V"],
+    ["GND", "gnd"],
+    ["D5", "gpio", "GPIO14 · SPI CLK"],
+    ["D6", "gpio", "GPIO12 · SPI MISO"],
+    ["D7", "gpio", "GPIO13 · SPI MOSI"],
+    ["D8", "strap", "GPIO15 · Boot LOW"],
+    ["RX", "uart", "GPIO3"],
+    ["TX", "uart", "GPIO1"],
+    ["GND", "gnd"],
+    ["3V3", "power", "3,3 V"]
+  ]
+}

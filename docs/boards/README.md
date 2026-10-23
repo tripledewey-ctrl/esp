@@ -9,6 +9,26 @@ mit Abbildung, Pinbelegung und den passenden Einstellungen.
 | [ESP32-DevKitC V4](esp32-devkitc.md)                         | ESP32    | ESP32-D0WD-V3 / ESP32-WROOM-32E  | `esp32_base`               | `esp32dev`             |
 | [ESP32-S3-DevKitC-1](esp32-s3-devkitc-1.md)                  | ESP32-S3 | ESP32-S3 / ESP32-S3-WROOM-1      | `esp32s3_base`             | `esp32s3`              |
 | [Waveshare ESP32-S3-Matrix](waveshare-esp32-s3-matrix.md)    | ESP32-S3 | ESP32-S3FH4R2 (ohne Modul)       | `waveshare_s3_matrix_base` | `waveshare_s3_matrix`  |
+| [DOIT ESP32 DevKit V1 (30 Pins)](doit-esp32-devkit-v1.md)    | ESP32    | ESP32-D0WD / ESP32-WROOM-32      | `doit_devkit_v1_base`      | `doit_devkit_v1`       |
+| [NodeMCU V2](nodemcu-v2.md)                                  | ESP8266  | ESP8266EX / ESP-12E/F            | `esp8266_base`             | `nodemcuv2`            |
+| [Heltec WiFi Kit 8](heltec-wifi-kit-8.md)                    | ESP8266  | ESP8266EX (ohne Modul) + OLED    | `heltec_wifi_kit_8_base`   | `heltec_wifi_kit_8`    |
+| [ESP32-C3 mit 0,42″-OLED](esp32-c3-oled-042.md)              | ESP32-C3 | ESP32-C3FN4/FH4 (ohne Modul) + OLED | `esp32c3_oled_base`     | `esp32c3_oled`         |
+
+## Eigene Boards zuordnen
+
+<p align="center"><img src="fotos/uebersicht.jpg" alt="Foto aller eigenen Boards" width="600"></p>
+
+| Position im Foto | Erkennungsmerkmal                                       | Board-Seite |
+|------------------|---------------------------------------------------------|-------------|
+| oben links       | ESP-12-Blechmodul mit Mäander-Antenne, Pins D0–D8, Tasten RST/FLASH | [NodeMCU V2](nodemcu-v2.md) (**ESP8266**) |
+| oben Mitte       | 2×15 Pins, Aufdruck **HW-463**, Pins D23, D22 …, EN/BOOT | [DOIT ESP32 DevKit V1](doit-esp32-devkit-v1.md) |
+| oben rechts      | 2×19 Pins, Pins G23, G22, CMD …, AZ-Delivery-Modul, mit „2“ markiert | [ESP32-DevKitC V4](esp32-devkitc.md) |
+| unten links      | 8×8-LED-Feld, Aufdruck „ESP32-S3-Matrix“                 | [Waveshare ESP32-S3-Matrix](waveshare-esp32-s3-matrix.md) |
+| unten Mitte      | lila, USB-C, winziges OLED, Tasten BOOT/RST              | [ESP32-C3 mit 0,42″-OLED](esp32-c3-oled-042.md) |
+| unten rechts     | lang und schmal, OLED über fast die ganze Länge, Micro-USB | [Heltec WiFi Kit 8](heltec-wifi-kit-8.md) (**ESP8266**) |
+
+Funktionstest: [`blink`](../../projects/blink) für alle Boards, [`oled-demo`](../../projects/oled-demo)
+für die OLED-Boards, [`matrix-demo`](../../projects/matrix-demo) für die Matrix.
 
 Neues Board aufnehmen: [`_vorlage.md`](_vorlage.md) kopieren und den Schritten in
 [„Neues Board dokumentieren“](#neues-board-dokumentieren) folgen.
@@ -74,15 +94,18 @@ wird von oben nach unten immer genauer:
 ## Neues Board dokumentieren
 
 1. `docs/boards/_vorlage.md` nach `docs/boards/<board-name>.md` kopieren und ausfüllen.
-2. Pinbelegung als JSON in `docs/boards/specs/<board-name>.json` anlegen
+2. Optional ein eigenes Foto des Boards (zugeschnitten, ca. 600 px, JPEG) nach
+   `docs/boards/fotos/<board-name>.jpg` legen und unter dem Bild einbinden.
+   Nur eigene Fotos, keine Herstellerbilder.
+3. Pinbelegung als JSON in `docs/boards/specs/<board-name>.json` anlegen
    (Format: Kopf von `scripts/board-image.py`) und Bild erzeugen:
 
    ```bash
    python3 scripts/board-image.py docs/boards/specs/<board-name>.json
    ```
 
-3. Board in die Tabelle oben eintragen.
-4. Basis-Sektion in `boards/boards.ini` ergänzen und in den Projekten ein `[env:…]` anlegen.
-5. Prüfen: `python3 scripts/check-docs.py`
+4. Board in die Tabelle oben eintragen.
+5. Basis-Sektion in `boards/boards.ini` ergänzen und in den Projekten ein `[env:…]` anlegen.
+6. Prüfen: `python3 scripts/check-docs.py`
 
 Diese Schritte erledigt auch der Claude-Skill **esp-doku** (`.claude/skills/esp-doku/`).

@@ -1,0 +1,16 @@
+{
+  "title": "ESP32-C3 mit 0,42″-OLED",
+  "subtitle": "01Space / Abrobot-Typ · Chip ESP32-C3FN4/FH4 (4 MB Flash) · OLED 72×40 (SSD1306) · USB-C nativ",
+  "module": "ESP32-C3 + OLED",
+  "top": "Keramikantenne",
+  "bottom": "USB-C (nativ, USB-Serial/JTAG) · Stiftleisten lt. Aufdruck",
+  "buttons": ["BOOT", "RST"],
+  "internal": [
+    ["GPIO5", "I2C SDA → OLED SSD1306 (0x3C)"],
+    ["GPIO6", "I2C SCL → OLED"],
+    ["GPIO8", "blaue LED (active LOW) · Strapping-Pin"],
+    ["GPIO9", "BOOT-Taste · Strapping-Pin"],
+    ["GPIO18/19", "USB D-/D+"],
+    ["GPIO11–17", "interner Flash – nicht verwenden"]
+  ]
+}

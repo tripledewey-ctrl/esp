@@ -1,0 +1,16 @@
+{
+  "title": "Heltec WiFi Kit 8",
+  "subtitle": "Heltec Automation · Chip ESP8266EX · 4 MB Flash (ältere: 2 MB) · 0,91″-OLED 128×32 · LiPo-Lader",
+  "module": "ESP8266 + OLED",
+  "top": "PCB-Antenne",
+  "bottom": "Micro-USB · USB-UART CP2104 · LiPo-Buchse SH1.25 · Stiftleisten lt. Aufdruck (je Revision verschieden)",
+  "buttons": ["RST", "PRG"],
+  "internal": [
+    ["GPIO4", "I2C SDA → OLED SSD1306 (0x3C) – zu prüfen"],
+    ["GPIO5", "I2C SCL → OLED – zu prüfen"],
+    ["GPIO16", "OLED-Reset – zu prüfen"],
+    ["GPIO0", "PRG-Taste (Download-Modus)"],
+    ["GPIO1/3", "UART0 → CP2104 (Upload/Monitor)"],
+    ["ADC", "A0 – Bereich laut Heltec-Schaltplan prüfen"]
+  ]
+}
